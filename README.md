@@ -4,7 +4,7 @@ A virtual version of rock paper scissors! Two players compete by choosing an opt
 
 ## Project Roadmap File
 
-[Project Roadmap Google Doc link] (https://docs.google.com/document/d/1WcT3YWK5hCCGMKhsA5-ickxBhpTuH6up6qYmtpIosPU/edit?usp=sharing)
+[Project Roadmap Google Doc link](https://docs.google.com/document/d/1WcT3YWK5hCCGMKhsA5-ickxBhpTuH6up6qYmtpIosPU/edit?usp=sharing)
 
 ## MIT License
 
