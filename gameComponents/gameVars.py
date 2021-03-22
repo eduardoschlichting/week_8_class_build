@@ -5,9 +5,10 @@
 # the index always starts at 0
 choices = ["rock", "paper", "scissors"]
 
-player_lives = 3
-computer_lives = 3
 total_lives = 3
+player_lives = total_lives
+computer_lives = total_lives
+
 
 # True or False are Boolean data types
 # essentially, booleans are equivalent to an on or off switch, 1 or 0.

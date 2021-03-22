@@ -2,61 +2,7 @@
 from random import randint
 
 # re-import our game variables
-from gameComponents import gameVars
-
-# define a win or lose function (version 1)
-#def winorlose(status):
-	#version 1 of function
-	# print("Inside winorlose function; status is: ", status)
-	#print("You", status, "! Would you like to play again?")
-	#choice = input("Y / N? ")
-
-	#if choice =="N" or choice == "n":
-	#	print("You chose to quit! Better luch next time!")
-	#	exit()
-	#elif choice == "Y" or choice == "y":
-		# reset the player and computer lives
-		# and reset player choice to Flase, so our loop restarts
-
-# Define a win / lose function and refer to it (invoke it) in our game loop
-
-def winorlose(status):
-	if status == "won":
-		pre_message = "You are the huuuuugest winner ever! "
-	else:
-		pre_message = "You done trumped it, loser! "
-
-	print(pre_message + 'Would you like to play again?')
-
-	choice = False
-
-	while choice == False:
-		choice = input("Y / N? ")
-
-		if choice == "Y" or choice == "y":
-			#reset the game loop and start over again
-			#global player_lives
-			#global computer_lives
-			#global total_lives
-
-			#it's commented because now we are updating the variables from gameVars
-
-			gameVars.player_lives = gameVars.total_lives
-			gameVars.computer_lives = gameVars.total_lives
-	
-		elif choice == "N" or choice == "n":
-			#exit message and quit
-			print("You chose to quit. Better luck next time!")
-			exit()
-		else:
-			print("Make a valid choice - Y or N")
-			choice = False
-	#old code:
-		#else:
-		#	print("Make a valid choice - Y or N")
-		#	#this might generate a bug that we need to fix later
-		#	choice = input("Y / N? ")
-
+from gameComponents import gameVars, winLose
 
 gameVars.player_choice == False
 while gameVars.player_choice is False: #
@@ -115,10 +61,10 @@ while gameVars.player_choice is False: #
 			gameVars.computer_lives -= 1
 
 	if gameVars.player_lives == 0:
-		winorlose("lose")
+		winLose.winorlose("lose")
 
 	if gameVars.computer_lives == 0:
-		winorlose("won")
+		winLose.winorlose("won")
 		
 
 	#print("player_lives:", gameVars.player_lives)
