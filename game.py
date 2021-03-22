@@ -55,7 +55,7 @@ while player_choice is False: #
 	player_choice = input("Choose rock, paper, or scissors: \n")
 	# player_choice now equals TRUE -> it has a value
 
-	if player_choice == "quit":
+	if player_choice == "quit":=============
 		print("You chose to quit!")
 		exit()
 
