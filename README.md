@@ -5,7 +5,11 @@
 
 # Ok but what is this game?
 
-I have built this Rock, Paper and Scissors game following the class builds from MMED-1054. The key objetive =here was to learn the basics of python and its features.
+I have built this Rock, Paper and Scissors game following the class builds from MMED-1054. The key objetive here was to learn the basics of python and its features.
+
+It is a simple game where the objective is to defeat the opponent by choosing the right weapons.
+
+The player who runs out of lifes, lose. Simple as that.
 
 # Project Roadmap
 
